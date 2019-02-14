@@ -28,11 +28,11 @@ class ActionView extends Component {
 
     componentWillMount() {
         // Gets all learning materials from database and updates state of materials object
-        /*getMaterials().then(response => response.json()).then(responseJson => {
+        getMaterials().then(response => response.json()).then(responseJson => {
             this.setState({
                 materials: responseJson
             });
-        });*/
+        });
         // Get all children of the current user and update state of children info object
         getUserPatients().then(response => response.json()).then(responseJson => {
             let patientMap = {};
